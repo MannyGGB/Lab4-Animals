@@ -74,6 +74,15 @@ function askTime () {
     document.write(message)
 }
 
+// return --> we only add return + variable at the end of a function when we need the variable value outside of the function.
+// function code only exists indide the function {}
+// return is useful when a variable (let) was created only inside the function, but does not exist outside it.
+
+function getPlayerName () {
+    let userName = prompt("What's your name?")
+    return userName
+}
+
 // Operators
 + - * / etc
 // Expressions --> when we compare two things and evaluates a value
@@ -84,8 +93,8 @@ let d = 1 / 2
 let e = 1 ** 2
 
 // Comparators
-== equal to
-!= not equal to
+// == equal to
+// != not equal to
 >
 <
 >=
@@ -93,10 +102,10 @@ let e = 1 ** 2
 === strictly equal to
 !== strictly not equal to
 
-// </>Comparisons
+// Comparisons
 // a > b --> false (false is the value after being evaluated)
-c <= d
-d >= c
+// </>c <= d
+// d >= c
 
 // Parameters
 // They are inside the function brackets
@@ -108,3 +117,14 @@ let a = prompt("Give me num1")
 let b = prompt("Give me num2")
 
 sum(a, b)
+
+//Example of functions with return and parameters
+//Parameters are placeholders in the function; arguments are the actual values for those parameters
+
+function sum(a, b) {
+    return a + b //here I am returning this parameters to be used outside this function
+}
+
+function greet () {
+    console.log("You have " + sum(10,5) + " gold") // here I replaced the parameters with the arguments
+}
