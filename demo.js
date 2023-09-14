@@ -35,15 +35,76 @@ console.log("Hello " + username)
 
 let message; // create a variable with no value yet
 if(time < 12) {
-    message("Good morning");
+    message = "Good morning";
 } else if(time < 18) {
-    message("Good afternoon");
+    message = "Good afternoon";
 } else {
-    message("Good evening");
+    message = "Good evening";
 }
 message = "Hello " + username + ", " + message; // here we concatenated different prompts to print all the messages together
 console.log(message)
 
 // print messages on the page
-// you need to add the <script> onto the html (for example, as a <h2>)
+// you need to add the <script> onto the html (for example, as an <h2>)
 document.write(message); 
+
+// functions are used to get an outcome and to save time by not repeating code
+function getName () { // here we declare the function and will only run when we call it below
+    let username = prompt("What is  your name?");
+    document.write("Hello " + username); 
+}
+// now we invoke (call) the function, so it runs the code in {}
+getName();
+
+//we can add js in the HTML using <script>
+<script>getName()</script> 
+
+//You can include conditionals in a function
+function askTime () {
+    let time = prompt("What's the time?")
+    let message; // create a variable with no value yet
+    if(time < 12) {
+        message = "Good morning";
+    } else if(time < 18) {
+        message = "Good afternoon";
+    } else {
+        message = "Good evening";
+    }
+    message = "Hello " + username + ", " + message; // here we concatenated different prompts to print all the messages together
+    document.write(message)
+}
+
+// Operators
++ - * / etc
+// Expressions --> when we compare two things and evaluates a value
+let a = 1 + 2
+let b = 1 * 2
+let c = 2 - 1
+let d = 1 / 2
+let e = 1 ** 2
+
+// Comparators
+== equal to
+!= not equal to
+>
+<
+>=
+<=
+=== strictly equal to
+!== strictly not equal to
+
+// </>Comparisons
+// a > b --> false (false is the value after being evaluated)
+c <= d
+d >= c
+
+// Parameters
+// They are inside the function brackets
+function sum(num1, num2) {
+    console.log(num1 + num2)
+}
+
+let a = prompt("Give me num1")
+let b = prompt("Give me num2")
+
+sum(a, b)
