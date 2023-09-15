@@ -128,3 +128,42 @@ function sum(a, b) {
 function greet () {
     console.log("You have " + sum(10,5) + " gold") // here I replaced the parameters with the arguments
 }
+
+// for loops (basic for loop with counter)
+for (let counter = 0; counter <=20; counter++) { // counter ++ means counter = counter + 1
+    console.log("Hello World " + counter) // you can concatenate here
+}
+// The computer reads up to counter <=20, then goes to console.log, then to counter ++ and back to counter <=20.
+// It repeats until the value is false (in this case, it will repeat until the value is 21).
+
+function getRating() {
+    let rating = prompt("Rate my site between 1–5.","5") // the string after the comma will appear as the default answer to the prompt
+
+    for (let i = 0; i < rating; i++) {
+        document.write("<img src= 'star.png'/>") // you can print an image too instead of a string by using HTML code on JS
+    }
+
+}
+// while loops (we use while loops for binaries)
+while (!isUserLoggedIn) {
+    myElement.innerText = "Please, log in" // while the person is not (!) logged in, show that message until they do.
+}
+
+let x = 1;
+while (x < 5) {
+    console.log(x) // this is an infinite loop and the value of x is always 1
+    x++ // we added an increment, so it is not infinite
+}
+let isAdmin = true // this will run forever because isAdmin is always true, never changes
+while (isAdmin){
+    console.log("You are an admin!")
+}
+
+function getRating() {
+    let rating = prompt("Rate my site between 1–5.")
+    while(!(rating > 0 && rating <= 5)) { //&& means AND || means or / we add (!) in () so it applies to both conditions
+        // an equivalent is (rating < 0 || rating >= 5)
+        rating = prompt("Rate my site between 1–5.")
+        
+    }
+}

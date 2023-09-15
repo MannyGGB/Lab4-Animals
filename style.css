@@ -1,81 +1,86 @@
 header {
-        padding: 20px;
-        border: 15px solid #BF211E;
-        margin: 20px;
-        border-radius: 10px;
-        background-color: #E9CE2C;
-        font-family: "Calibri", sans-serif;   
-        font-style: normal;
-        font-size: 20px;
-        text-align: center;
+  padding: 20px;
+  border: 15px solid #bf211e;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: #e9ce2c;
+  font-family: "Calibri", sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  text-align: center;
 }
 
 .title {
-    font-size: 50px;
-    text-align: center;
+  font-size: 50px;
+  text-align: center;
 }
 
 .links {
-    font-size: 30px;
-    font-family: "Calibri", sans-serif;   
-    font-style: normal;
-    font-size: 20px;
-    display: inline;
-    text-decoration: none;
+  font-size: 30px;
+  font-family: "Calibri", sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  display: inline;
+  text-decoration: none;
 }
 
 .links:hover {
-background-color: #69a197;   
+  background-color: #69a197;
 }
 
 body {
-    background-color: #E5F993;
+  background-color: #e5f993;
 }
 
 main {
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-bottom: 10px;
-    margin-right: 20px;
-    font-family: "Calibri", sans-serif;   
-    font-style: normal;
-    font-size: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  font-family: "Calibri", sans-serif;
+  font-style: normal;
+  font-size: 20px;
 }
 
 .description {
-    background-color: #E9CE2C;
-    border-radius: 10px;
+  background-color: #e9ce2c;
+  border-radius: 10px;
 }
-section{
-    background-color: #E9CE2C;
-    border-radius: 10px;
+section {
+  background-color: #e9ce2c;
+  border-radius: 10px;
 }
 
 .image {
-    width:auto;
-    height: 200px;
-    border: 15px solid #BF211E;
-    border-radius: 10px;
+  width: auto;
+  height: 200px;
+  border: 15px solid #bf211e;
+  border-radius: 10px;
 }
 
 ul {
-    padding: 20px;
+  padding: 20px;
 }
 
-ul > li {  
-    list-style-type: decimal;
+ul > li {
+  list-style-type: decimal;
 }
 
-.list-title{
-    font-style: oblique;
+.list-title {
+  font-style: oblique;
 }
-
+.otter2 {
+  max-width: 400px;
+  max-height: 400px;
+  border: 15px solid #bf211e;
+  border-radius: 10px;
+}
 .footer-text {
-    background-color: #F9DC5C;
-    font-family: "Calibri", sans-serif;   
-    font-style: normal;
-    font-size: 20px;
-    text-align: center;
-    border-radius: 10px;
-    margin: 20px;
+  background-color: #f9dc5c;
+  font-family: "Calibri", sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 20px;
 }
