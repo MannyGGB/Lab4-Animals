@@ -26,7 +26,7 @@ function check() {
 
 function userRating() {
   let rating = prompt("How would you rate this website from 1 to 10?");
-  while (rating <= 0 || rating >= 10) {
+  while (!(rating >= 0 && rating <= 10)) {
     rating = prompt(
       "Sorry, that's not a valid rating. " +
         "How would you rate this website from 1 to 10?"
